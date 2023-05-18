@@ -1,0 +1,418 @@
+*{
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.header{
+    background-color: rgba(7, 205, 245, 0.432);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 50px;
+    gap: 30px;  
+}
+
+.logo-container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: gold;
+    font-size: 1.2rem;  
+}
+
+.logo{
+    padding: 5px 0;
+    height: 70px;
+}
+.buscador{
+    border: 1px solid gold;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    background-color: white;
+    height: 30px;
+    width: 500px;
+    gap: 5px;
+    
+    
+}
+.buscador i {
+    text-align: center;
+    font-size: 1.1rem;
+    color: gold;
+}
+.buscador input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: 0;
+}
+
+
+/*********************************************************/
+.nav-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 60px;
+    gap: 100px;
+    
+}
+
+.nav-elements a{
+    text-decoration: none;
+}
+.nav-elements a:focus{
+    color: gold;
+}
+.nav-elements a:hover{
+    font-size: 1.5rem ;
+    color: gold;
+}
+.nav-elements img{
+    width: 60px;
+    height: 40px;
+}
+.nav-elements li{
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 550;
+    color: gold;
+}
+
+/**************************************************/
+.data-container{
+    background-image: url(./img/fondoargentina\ 1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/****************************************************************/
+.slider-container{
+    /*1280*/
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;   
+}
+
+.slider-container ul {  
+    display: flex;
+    width: 200%;
+    animation: slide 10s infinite ease-in-out;   
+}
+
+.slider-container li {
+    width: 100%; 
+    list-style: none;
+   
+}
+
+.slider-container img {
+    height: 400px;
+    width: 100%;
+    
+}
+
+/****************************************/
+
+
+
+.info-container{ 
+    width: 100%;
+}
+
+.info-products{  
+    margin: 0 auto;
+    max-width: 1200px; 
+    
+    display: grid;
+    /* Uso un atajo para definir tres filas / tres columnas */
+    grid-template: auto auto auto / 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'c1 c1 c2 c2 c3 c3'
+                         'c4 c4 c5 c5 c5 c5'
+                         'c6 c6 c6 c7 c7 c7';
+    gap: 4px; 
+}
+
+.e1{grid-area: c1;}
+.e2{grid-area: c2;}
+.e3{grid-area: c3;}
+.e4{grid-area: c4;}
+.e5{grid-area: c5;}
+.e6{grid-area: c6;}
+.e7{grid-area: c7;}
+
+
+
+.element-info{ 
+    border-radius: 20px;
+}
+/***********************************/
+.e5{
+    display: flex;
+    
+    justify-content: center;
+    
+    gap: 4px;
+    padding: 3px 10px;
+}
+
+.product-info{
+    
+    padding:5px 0 15px;
+    width: 150px;
+    min-height: 320px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.img{
+    height: 200px;
+    width: 150px;  
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+}
+
+/* .product-info img{
+    height: 100%;
+    width: 100%;
+} */
+
+.barra-separadora-product{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(240, 248, 255, 0.762);
+}
+.nombre-product{
+    text-align: center;
+
+}
+.precio{
+    font-weight: 600;
+    text-align: center;
+} 
+
+.button-comprar{
+    width: 100%;
+}
+.button-comprar:hover{
+    background-color:rgb(229, 150, 3);
+}
+
+/********************************************/
+
+.element-info img {
+    width: 100%;
+    height: 100%;
+}
+
+/************************************************************/
+
+.data-formasDePago-Container{
+   
+    margin: 10px auto 0;
+    display: flex;
+    padding: 0 10px;
+    gap: 5px;
+    max-width: 1200px;
+}
+
+.data-pagos{
+    max-width: 100%;
+    /* max-height: 140px; */
+    
+}
+.data-pagos img{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 10px;
+}
+/*////////////////////////////////////////////////////////////*/
+
+.footer{
+    /**/
+    background-color:rgb(43, 134, 214);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    color: white;
+    margin-bottom: 5px;
+    padding: 2px 0;
+}
+
+.title { /*todos los titulos*/
+    font-weight: 700;
+    font-size: 32px;
+}
+
+button {
+    background-color: orange;
+    border: 0px solid black;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+
+}
+
+.elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right:2px solid white;
+}
+
+.elemento:nth-child(1){
+    display: flex;
+    gap: 10px;
+}
+.elemento:nth-child(2){
+    display: flex;
+    gap: 20px;
+    
+}
+.elemento:nth-child(3){
+    display: flex;
+    gap: 20px;
+    
+}
+.boton-arrepentimiento{
+    text-decoration: underline;
+}
+
+.footer{
+    width: 100%;
+}
+.footer-social i{
+    height:30px ;
+    width:30px ;
+    color: black;
+    padding: 6px;
+    background-color:white;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+
+
+
+/**********************************************************/
+@keyframes slide{
+    0%{margin-left: 0%;}
+    45%{margin-left: 0%;}
+
+    50%{margin-left: -100%;}
+    95%{margin-left: -100%;}
+    
+}
+
+/************************** MEDIA QUEROS ******************************/
+
+/*574*/
+@media only screen and (max-width: 680px) {
+    
+    .nav-elements{
+        display: flex;
+        gap: 20px;
+    }
+
+    .info-products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .element-info{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .product-info{
+        width: 150px;
+        
+
+    }
+    /************** FOOTER *****************/
+
+    .footer{
+        background-color:#fd611a;;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-row: 1fr 1fr;
+    }
+    .ayuda{
+        grid-row: 1/3;
+       
+        text-align: center;
+    }
+    .contacto{
+        padding: 10px;
+        border-bottom: 2px solid white;
+    }
+    .redes{
+        text-align: center;
+        padding: 10px;
+    }
+    .cantacto-contents{
+        display: grid;
+        padding: 10px 0;
+        gap: 5px ;
+        background-repeat:repeat-y ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20px 1fr 1fr;
+    }
+    .titulo-contacto{
+        grid-column: 1/3;
+    }
+    .atencion-cliente{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .email{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    
+    }
+    .telefono{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .servicio-empresas{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    
+    .contacto-element{
+        
+        padding: 15px 0;
+    }
+    
+    
+}
+
+
+
